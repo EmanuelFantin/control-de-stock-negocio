@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Productos</a></li>
+            <li><a href="manage-products.html">Agregar o Modificar Productos</a></li>
+        </ul>
+    </nav>
+    <h1>Lista de Productos</h1>
+    <input type="text" id="search" placeholder="Buscar productos...">
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Marca</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Código</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Carrito de Compras</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Marca</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <input type="number" id="amount-paid" placeholder="Monto pagado">
+    <button id="confirm-order-btn">Confirmar Pedido</button>
+    <div id="ticket-output"></div>
+    <script src="main.js"></script>
+</body>
+</html>
